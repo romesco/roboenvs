@@ -1,0 +1,27 @@
+output_dir_name: envreps
+envs_per_map: 2
+maps:
+- citymaps/berlin.png
+obstacle_groups:
+- num: 10
+  distribution: normal
+  pos_var: 0.3
+  vel_var: 0.1
+  obs:
+    x_pos: 2.0
+    y_pos: 2.0
+    x_vel: 1.0
+    y_vel: 1.0
+    obs_type: circle
+    radius: 0.1
+- num: 2
+  distribution: normal
+  pos_var: 0.0
+  vel_var: 0.0
+  obs:
+    x_pos: 0.0
+    y_pos: 0.0
+    x_vel: 0.0
+    y_vel: 0.0
+    obs_type: circle
+    radius: 0.1
